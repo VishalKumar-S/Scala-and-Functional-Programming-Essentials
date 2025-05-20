@@ -1,3 +1,5 @@
+package notes
+
 
 
 object generics extends App{

@@ -1,3 +1,5 @@
+package notes
+
 class CustomExceptionError extends Exception{
     println("im an error")
 }

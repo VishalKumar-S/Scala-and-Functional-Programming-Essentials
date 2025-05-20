@@ -1,5 +1,7 @@
+package notes
+
 import scala.annotation.tailrec
-import scala.util.control.Breaks._
+import scala.util.control.Breaks.*
 
 object Introduction {
     def main(args: Array[String]): Unit = {

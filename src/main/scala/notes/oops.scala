@@ -1,3 +1,5 @@
+package notes
+
 import scala.language.postfixOps
 
 object oops extends App {

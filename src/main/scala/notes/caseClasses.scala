@@ -1,3 +1,5 @@
+package notes
+
 object caseClasses extends App {
   val p1 = new caseClasses("1. In Case classes, all class parameters are class fiedls by default, no need of initialsiingin it val, it's automatically considered as class fields")
   println(p1.description)

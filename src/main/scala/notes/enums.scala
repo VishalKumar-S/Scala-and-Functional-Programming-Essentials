@@ -1,3 +1,5 @@
+package notes
+
 object enums {
 
   enum fileActions(keyboardShortcut: String) {
