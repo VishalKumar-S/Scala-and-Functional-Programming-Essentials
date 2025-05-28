@@ -1,6 +1,6 @@
 package notes
 
-import learnPackages._
+//import learnPackages._
 import learnPackages.{Vishal,Kumar}
 import learnPackages.{Vishal=>firstName,Kumar=>lastName}
 
