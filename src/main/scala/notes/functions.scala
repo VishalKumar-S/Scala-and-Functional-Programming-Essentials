@@ -131,9 +131,9 @@ object functions extends App{
 
   println("Map Transformed Values: " + (secondList.map(MapMyTransformer)).toString)
 
-  val flattenMapTransform: Int => MyFunctionalList[Int] = A=> new ExistingMyFunctionalList(A, new ExistingMyFunctionalList(A + 1, EmptyMyFunctionalList))
+  val flatMapTransform: Int => MyFunctionalList[Int] = A=> new ExistingMyFunctionalList(A, new ExistingMyFunctionalList(A + 1, EmptyMyFunctionalList))
 
-  println("Flatten Map Transformed Values: " + (secondList.flattenMap(flattenMapTransform)).toString)
+  println("Flatten Map Transformed Values: " + (secondList.flatMap(flatMapTransform)).toString)
 
 
 
@@ -172,7 +172,7 @@ abstract class MyFunctionalList[+T] {
 
   def map[B](mapTransformer: T=>B): MyFunctionalList[B]
 
-  def flattenMap[B](flattenMapTransformer: T=> MyFunctionalList[B]): MyFunctionalList[B]
+  def flatMap[B](flatMapTransformer: T=> MyFunctionalList[B]): MyFunctionalList[B]
 
   def filter(condn: (T)=>Boolean): MyFunctionalList[T]
 
@@ -201,7 +201,7 @@ object EmptyMyFunctionalList extends MyFunctionalList[Nothing] {
 
   def map[B](mapTransformer: Nothing=>B): MyFunctionalList[B] = EmptyMyFunctionalList
 
-  def flattenMap[B](flattenMapTransformer: Nothing=> MyFunctionalList[B]): MyFunctionalList[B] = EmptyMyFunctionalList
+  def flatMap[B](flatMapTransformer: Nothing=> MyFunctionalList[B]): MyFunctionalList[B] = EmptyMyFunctionalList
 
   def filter(condn: (Nothing) => Boolean): MyFunctionalList[Nothing] = EmptyMyFunctionalList
 
@@ -240,8 +240,8 @@ class ExistingMyFunctionalList[+T](val head: T, val tail: MyFunctionalList[T]) e
     new ExistingMyFunctionalList(mapTransformer(head), tail.map(mapTransformer))
   }
 
-  def flattenMap[B](flattenedMapTransformer: Function1[T, MyFunctionalList[B]]): MyFunctionalList[B] = {
-    flattenedMapTransformer(head) ++ tail.flattenMap(flattenedMapTransformer)
+  def flatMap[B](flattenedMapTransformer: Function1[T, MyFunctionalList[B]]): MyFunctionalList[B] = {
+    flattenedMapTransformer(head) ++ tail.flatMap(flattenedMapTransformer)
   }
 
   def ++[B >: T](other: MyFunctionalList[B]): MyFunctionalList[B] = {
