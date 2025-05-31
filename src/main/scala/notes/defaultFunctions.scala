@@ -18,7 +18,7 @@ object defaultFunctions extends App{
 
   println("Printing all combinatons of num, smallchar, bigchar")
   println(num.flatMap(n=> smallChar.flatMap(sC=> bigChar.map(bC => n.toString()+ bC + sC))))
-  println("We can use for - comprehensions, intead of this complex chainign of flatpmaps and maps, which woudl make more readable, tpo ahcive the same result. Also in for comprehensiosn, we can have condiotns for each expressions, called as guards, which willa ct as filtr consiosnt, just the compierl will apply filter fucntion before applying that expression, let us see for each exmaple acheviing teh same resuslts along with ti contiaingin guards. For comprehensions r reqritten by the compiler, wit flaptmaps and maps")
+  println("We can use for - comprehensions, intead of this complex chainign of flatpmaps and maps, which woudl make more readable, tpo ahcive the same result. Also in for comprehensiosn, we can have condiotns for each expressions, called as guards, which willa ct as filtr consiosnt, just the compierl will apply filter fucntion before applying that expression, let us see for each exmaple acheviing teh same resuslts along with ti contiaingin guards. For comprehensions r reqritten by the compiler, wit flaptmaps and maps. The laptmaps withFilter conditions will be executed within the for loop, <- refers to flatmap, adn otuside u use yiedl to return a value, where we will apply the map function.")
 
   val forComprehensions = for {
     n<- num if n<10
