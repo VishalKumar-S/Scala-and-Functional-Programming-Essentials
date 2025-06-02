@@ -188,7 +188,7 @@ abstract class MyFunctionalList[+T] {
 }
 
 
-object EmptyMyFunctionalList extends MyFunctionalList[Nothing] {
+case object EmptyMyFunctionalList extends MyFunctionalList[Nothing] {
   def isEmpty(): Boolean = true
 
   def gethead() = throw new NoSuchElementException
@@ -222,7 +222,7 @@ object EmptyMyFunctionalList extends MyFunctionalList[Nothing] {
 }
 
 
-class ExistingMyFunctionalList[+T](val head: T, val tail: MyFunctionalList[T]) extends MyFunctionalList[T] {
+case class ExistingMyFunctionalList[+T](val head: T, val tail: MyFunctionalList[T]) extends MyFunctionalList[T] {
   def addNode[S >: T](h: S): MyFunctionalList[S] = new ExistingMyFunctionalList(h, this)
 
   def isEmpty(): Boolean = false
