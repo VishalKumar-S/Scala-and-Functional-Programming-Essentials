@@ -1,6 +1,6 @@
 package notes
 
-object enums {
+object 6enums {
 
   enum fileActions(keyboardShortcut: String) {
     case READ extends fileActions("CTRL+R")

@@ -5,7 +5,7 @@ class CustomExceptionError extends Exception{
 }
 
 
-object exceptions extends App{
+object 7exceptions extends App{
     println("Exceptions a re JVM concept, scala compielr hass notign to do with it.")
 
 

@@ -2,7 +2,7 @@ package notes
 
 
 
-object generics extends App{
+object 4generics extends App{
     println("Generic types are within []. Like classes, traits can also have generic types. Variance defines the relationship between complex types based on their component types. In Scala, this applies particularly to generics (like List[T]). There r 3 variance notations in Scala")
     val fruitsContainer = new Container[Fruits](new Fruits("apple"))
     val foodContainer: Container[Food] = fruitsContainer

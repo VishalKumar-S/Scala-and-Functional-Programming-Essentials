@@ -2,7 +2,7 @@ package notes
 
 import scala.annotation.tailrec
 
-object functions extends App{
+object 9functions extends App{
 
   println("In JVM, eveyrhting is related to Objected oriented onyl i.e class and objects, for functional programming, we will use this class objects itself as functions. Note,in Scala, all functions are either objects, or instances of a class. There is a concept, called Function types in scala, which r pre-defined traits, that represents functions. THere are a total of 22  function types in Scala. Examples:\n\nFunction1[A, B] → represents a function A => B\n\nFunction2[A, B, C] → represents a function (A, B) => C\n\n... all the way up to Function22 → for functions with 22 parameters.\n")
 

@@ -2,7 +2,7 @@ package notes
 
 import scala.language.postfixOps
 
-object inheritance extends App {
+object 3inheritance extends App {
   val p = new Parent()
   val c = new Child("Overrided child content: It's possible to override parent class attributes in the child class constructor itself")
   println(p.content)

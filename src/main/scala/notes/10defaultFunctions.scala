@@ -4,7 +4,7 @@ import notes.functions.*
 
 import scala.util.Random
 
-object defaultFunctions extends App{
+object 10defaultFunctions extends App{
 
   val num = List(1,2,3)
   val smallChar = List('a','b','c')

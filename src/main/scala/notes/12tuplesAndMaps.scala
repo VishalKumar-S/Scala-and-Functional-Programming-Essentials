@@ -1,6 +1,6 @@
 package notes
 
-object tuplesAndMaps extends App{
+object 12tuplesAndMaps extends App{
   println("tuples r used to fourp differnt types together,its a data strcuture, scala like function types, it can only have 22 parameter limit (Tuple1 to Tuple22), uc ant have more than 22 parameters in a tuple in Scala2, then in Scala 3 , this oaremetr limti was removed")
   val randomTuple = Tuple3("Im first element",2,"Im third element")
 
