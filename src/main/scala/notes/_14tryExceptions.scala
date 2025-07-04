@@ -2,7 +2,7 @@ package notes
 import scala.util.{Try, Success, Failure}
 import scala.util.Random
 
-case object 14tryExceptions extends App{
+case object _14tryExceptions extends App{
   println("Try is a class in Scala to handle execeptions, it contains  2 classes - Failure, which throws , whena nye xception occurs, Success -which just wraps teh correct comptuted output, when u u use try block. Whenever there is a chance of retunign null in ur funcitonn, use Options, whenver ther is a chacne of retrunign exceptions, use Try. We can use map, flatmap adn otehr higher order functinos in Try also. Try class is used since usign multipl try-catch statemnts woudl be pretty compilcated and dificult ")
 
   val succ = Success(5)

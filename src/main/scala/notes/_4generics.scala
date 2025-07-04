@@ -2,7 +2,7 @@ package notes
 
 
 
-object 4generics extends App{
+object _4generics extends App{
     println("Generic types are within []. Like classes, traits can also have generic types. Variance defines the relationship between complex types based on their component types. In Scala, this applies particularly to generics (like List[T]). There r 3 variance notations in Scala")
     val fruitsContainer = new Container[Fruits](new Fruits("apple"))
     val foodContainer: Container[Food] = fruitsContainer
@@ -16,7 +16,7 @@ object 4generics extends App{
     readPDF.produce()
     val dogBox = new MutableBox[Dog]
     dogBox.set(new Dog())
-    println("In simple terms, +T → Covariant: Like an output (you can return it), -T → Contravariant: Like an input (you can take it), -T → Contravariant: Like an input (you can take it).Covariance allows substituting a generic type with its subtype. covariance makes it more generic — you can refer to a food of a specific type as a food of a more general type. i.e  container of vegetables can be seen as a container of food. Contravariance allows substituting a generic type with its supertype.  contravariance makes it more specific — i.e someone can handle all file types, can also handle pdf datatype. Invaraint means exact taht type only\n\n ")
+    println("In simple terms, +T → Covariant: Like an output (you can return it), -T → Contravariant: Like an input (you can take it), -T → Contravariant: Like an input (you can take it). Covariance allows substituting a generic type with its subtype. covariance makes it more generic — you can refer to a food of a specific type as a food of a more general type. i.e  container of vegetables can be seen as a container of food. Contravariance allows substituting a generic type with its supertype. contra-variance makes it more specific — i.e someone can handle all file types, can also handle pdf datatype. Invariant means exact that type only\n\n")
 
     println("Generic Immutable LinkedList")
     val firstElement = EmptyMyList.addNode("Vishal")
@@ -172,19 +172,18 @@ object 4generics extends App{
 
 class Animal
 class Dog extends Animal
-
 class Food(foodName: String)
 class Fruits(fruitName: String) extends Food(fruitName)
 class Vegetables(vegetableName: String) extends Food(vegetableName)
 
 class Container[+T](val thing: T) {
-    println("Covariance (using [+T]) means that if Child is a subtype of Parent, then GenericClass[Child] is a subtype of GenericClass[Parent]")
+    println("Co-variance (using [+T]) means that if Child is a subtype of Parent, then GenericClass[Child] is a subtype of GenericClass[Parent]")
 
 //    def consumeTValue(foodType: T): Unit = {
 //    }
     
     def consumeTValue[S>:T](item: S): Container[S] = {
-        println("You can only produce i.e return object of type T in co-variance, but u cannot consume type T object, i. u can;t use it as a method parameter. You can see the above commented lines, if i uncommetn ti,it shows compile error. the reason is, we r considering a container of fruits to be a container of food, but the issue is now, anyone, will try to add container of vegetables to the container of frutis itself, since its considered as conainer of food, but its not allowed, u can't add container of vegetables toa  container of fruits.  To overcome it well use workarounds via typebounds, let us say, if we have a a container of fruits to be considered as container of food, then suppose we add a container of vegetables, let us consider teh container to be food itself, instead of fruits, since we are adding container of vegetabesl to the  container of fruits, if we consume teh vegetabel container,with teh existing generic type of fruits contianer,it will cause issue, so we'll createa a new container of it's  supertype i.e foods container and add frutis and vegetables to it and return it, isntead of modifyiong teh exisitng container type. so it wont cause any issues and it also satisfied th co-variance. We cahieve this, by considering a gemenric type S, whihcsi asueprtype of T, anf we use thhat supertype i.e foods as container. here, wel just return the vegetable as sueprtype Food containe")
+        println("You can only produce i.e return object of type T in co-variance, but u cannot consume type T object, i. u can;t use it as a method parameter. You can see the above commented lines, if i uncomment ti, it shows compile error. the reason is, we r considering a container of fruits to be a container of food, but the issue is now, anyone, will try to add container of vegetables to the container of frutis itself, since its considered as container of food, but its not allowed, u can't add container of vegetables to a  container of fruits.  To overcome it well use workarounds via typebounds, let us say, if we have a a container of fruits to be considered as container of food, then suppose we add a container of vegetables, let us consider teh container to be food itself, instead of fruits, since we are adding container of vegetables to the  container of fruits, if we consume the vegetable container, with teh existing generic type of fruits contianer, it will cause issue, so we'll create a a new container of it's  supertype i.e foods container and add frutis and vegetables to it and return it, instead of modifying teh existing container type. so it wont cause any issues and it also satisfies the co-variance. We cahieve this, by considering a gemenric type S, whihcsi asueprtype of T, anf we use thhat supertype i.e foods as container. here, wel just return the vegetable as sueprtype Food containe")
         new Container[S](item)
     }
 
@@ -196,7 +195,7 @@ class Container[+T](val thing: T) {
         try {
             ???
         }
-        catch case e:NotImplementedError => println("??? Is called as 'Not Yet Implemented' in Scala. u cna use it as a plcaholder to indicate unimplmented code and, when executed, throws a NotImplementedError.This makes it useful during development when you want to outline the structure of your code but haven't yet provided an implementation for certain methods or expressions.\n")
+        catch case e:NotImplementedError => println("??? Is called as 'Not Yet Implemented' in Scala. u can use it as a placeholder to indicate unimplmented code and, when executed, throws a NotImplementedError.This makes it useful during development when you want to outline the structure of your code but haven't yet provided an implementation for certain methods or expressions.\n")
          new Fruits("orange").asInstanceOf[T]
     }
 
@@ -215,11 +214,11 @@ class PDFReader(val pdfName: String,val PDFReaderdescription: String = "I can re
 }
 
 class ReadPDFs[-T](pdfFile: T) {
-    println("Contravariant represented by teh symbol [-T], it means substitutability flows in the opposite direction, if Child is a subtype of Parent, then GenericClass[Parent] is a subtype of GenericClass[Child].If a AllfileReader can handle any file format, it can definitely handle a SPECIFIC type of file format  like a pdf file.")
+    println("Contravariant represented by teh symbol [-T], it means substitutability flows in the opposite direction, if Child is a subtype of Parent, then GenericClass[Parent] is a subtype of GenericClass[Child]. If a AllfileReader can handle any file format, it can definitely handle a SPECIFIC type of file format  like a pdf file.")
 
-    def consume[T<:AllFileFormatReader](file: T): Unit = {
-        println("In contravarainet, its posibel to consume, but does not produce values due to type issues.")
-        println("The readPDF reference is of type ReadPDFs[PDFReader], so consume expects a PDFReader argument, if u pass AllFileFormatReader object as parameter to the consumer method, it rhorws compiler error. The compiler checks types based on the reference type (ReadPDFs[PDFReader]), not the instance type (ReadPDFs[AllFileFormatReader]).Even though the instance can handle AllFileFormatReader, the reference readPDF enforces that consume must accept PDFReader (as declared in its type).At runtime, The JVM uses type erasure, so generic types like T in ReadPDFs[T] are erased. The actual method called is the one from the instance (ReadPDFs[AllFileFormatReader]), but the compiler ensures at compile time that the argument matches the reference’s declared type (PDFReader).\n Here, we have used upperbound voluntarily sicne we are accessing the attrribuets of file, during compile time, scala compiler, knows file is of generic type T, but not of which type exactly, so it dont knwo whthe teh attirbtue su are accessing r actaully exisits with file, so i use lowebound to mention teh generi type beign used compulsory be  a AllFileFormatReader or a subtype of it.")
+    def consume[T <:AllFileFormatReader](file: T): Unit = {
+        println("In contravariant, its possible to consume, but does not produce values due to type issues.")
+        println("The readPDF reference is of type ReadPDFs[PDFReader], so consume expects a PDFReader argument, if u pass AllFileFormatReader object as parameter to the consumer method, it rhorws compiler error. The compiler checks types based on the reference type (ReadPDFs[PDFReader]), not the instance type (ReadPDFs[AllFileFormatReader]). Even though the instance can handle AllFileFormatReader, the reference readPDF enforces that consume must accept PDFReader (as declared in its type).At runtime, The JVM uses type erasure, so generic types like T in ReadPDFs[T] are erased. The actual method called is the one from the instance (ReadPDFs[AllFileFormatReader]), but the compiler ensures at compile time that the argument matches the reference’s declared type (PDFReader).\n Here, we have used upperbound voluntarily sicne we are accessing the attributs of file, during compile time, scala compiler, knows file is of generic type T, but not of which type exactly, so it dont knwo whthe teh attirbtue su are accessing r actaully exisits with file, so i use lowerbound to mention teh generic type being used compulsory be a AllFileFormatReader or a subtype of it.")
         println("File name: "+file.fileName+"\nFile Format: "+file.fileType)
         file.readPDF()
 
@@ -231,7 +230,7 @@ class ReadPDFs[-T](pdfFile: T) {
 //    }
 
     def produce():Unit = {
-        println("Here, contravariant can't be producers since, the above commented  produce method would cause compiler issue, since we pointed the allfileformatreader object to the pdfreader ref type variable, stating, we can also use allfileformatreader to read pdf files, so we point it to our pdfreader ref type readPDF variable, but if u try to store/return of the contrapostiive T type parameter pdfFile object, which is of type AllFIleFormatReader, then ur givinng access to read all types of files to the people, where u should give access to read only pdf files to the people(since ref var type is pdfreader only), its dangeorus, so above produecer emthod is not allowed.")
+        println("Here, contravariant can't be producers since, the above commented  produce method would cause compiler issue, since we pointed the allfileformatreader object to the pdfreader ref type variable, stating, we can also use allfileformatreader to read pdf files, so we point it to our pdfreader ref type readPDF variable, but if u try to store/return of the contrapositive T type parameter pdfFile object, which is of type AllFIleFormatReader, then ur giving access to read all types of files to the people, where u should give access to read only pdf files to the people(since ref var type is pdfreader only), its dangeorus, so above produecer emthod is not allowed.")
 
     }
 }
@@ -243,7 +242,7 @@ class MutableBox[T] {
     def get(): T = item
     def set(newItem: T): Unit = { item = newItem }
 
-    println("Invariance means no subtype relationship exists between GenericClass[child] and GenericClass[parent], regardless of the relationship between child and parent. IT oes not contain any annotation. If we try  val parentBox: MutableBox[parent] = childBox, it leqds to compile error, since if it compiled,it could lead to operations like parentBox.set(new Cat())  Now childBox contains a Cat!\n val myChild: child = childBox.get() // RUNTIME ERROR! It's actually a Cat.")
+    println("Invariance means no subtype relationship exists between GenericClass[child] and GenericClass[parent], regardless of the relationship between child and parent. IT oes not contain any annotation. If we try  val parentBox: MutableBox[parent] = childBox, it leads to compile error, since if it compiled, it could lead to operations like parentBox.set(new Cat())  Now childBox contains a Cat!\n val myChild: child = childBox.get() // RUNTIME ERROR! It's actually a Cat.")
 }
 
 
@@ -279,9 +278,9 @@ object EmptyMyList extends MyList[Nothing]{
 
     def map[B](mapTransformer : MyTransformer[Nothing,B]): MyList[B] = EmptyMyList
 
-    def flattenMap[B](flattenMapTransformer: MyTransformer[Nothing, MyList[B]]): MyList[B]=  EmptyMyList
+    def flattenMap[B](flattenMapTransformer: MyTransformer[Nothing, MyList[B]]): MyList[B] =  EmptyMyList
 
-    def filter(condn: MyPredicate[Nothing]): MyList[Nothing]=  EmptyMyList
+    def filter(condn: MyPredicate[Nothing]): MyList[Nothing] =  EmptyMyList
 
     def ++[B](other: MyList[B]): MyList[B] = other
 }
@@ -314,11 +313,7 @@ class ExistingMyList[+T](val head: T,val tail: MyList[T]) extends MyList[T]{
     def filter(evenFilter: MyPredicate[T]): MyList[T] = {
         if evenFilter.test(head) then new ExistingMyList(head, tail.filter(evenFilter))
         else tail.filter(evenFilter)
-
     }
-
-
-
 }
 
 
@@ -332,7 +327,8 @@ trait MyTransformer[-A,B] {
 }
 
 
-class MapMyTransformer extends MyTransformer[Int, Int] {
+class MapMyTransformer extends MyTransformer[Int, Int]
+{
     override def transform(input: Int): Int = input * 2
 }
 

@@ -2,13 +2,13 @@ package notes
 
 import scala.annotation.tailrec
 
-object 9functions extends App{
+object _9functions extends App{
 
   println("In JVM, eveyrhting is related to Objected oriented onyl i.e class and objects, for functional programming, we will use this class objects itself as functions. Note,in Scala, all functions are either objects, or instances of a class. There is a concept, called Function types in scala, which r pre-defined traits, that represents functions. THere are a total of 22  function types in Scala. Examples:\n\nFunction1[A, B] → represents a function A => B\n\nFunction2[A, B, C] → represents a function (A, B) => C\n\n... all the way up to Function22 → for functions with 22 parameters.\n")
 
 
   val imAFunction = new explicitFunction {
-    override def apply(s: String) = s"Here, imAFunction is an instance of the class explicitFunction, overriding its apply method, but in Scala, as its functionla porgramming, we can use this class instance, itself as an function, if i pass parameter to this imAFunciton instance i.e Function,it will directly execute the apply method, passing the parameter ${s}"
+    override def apply(s: String) = s"Here, imAFunction is an instance of the class explicitFunction, overriding its apply method, but in Scala, as its functionla porgramming, we can use this class instance, itself as an function, if i pass parameter to this imAFunction instance i.e Function,it will directly execute the apply method, passing the parameter ${s}"
   }
 
   println(imAFunction("Vishal"))
@@ -36,17 +36,17 @@ object 9functions extends App{
 
   println("Returning a function inside a function in Scala " + iReturnAFunctionSyntacticalSugar(6)(7)+"\nThis type of calling a function with some parameter, and then it returning a function, which having parameters is called as Curried function.")
 
-  val withoutType: (String)=>String = x =>s"The syntactical sugar anonymous functions, we write is called as Lambda functions.${x}"
+  val withoutType: (String) => String = x =>s"The syntactical sugar anonymous functions, we write is called as Lambda functions.${x}"
 
-  println(withoutType("Note, here in Lambda functions,if we mention the parameters type in the type of the ref varaible itself,its optional to include the type fo paramters in the function object creation part. Here,i didnt mention type for x in the obejct creation part"))
+  println(withoutType("Note, here in Lambda functions, if we mention the parameters type in the type of the ref variable itself, its optional to include the type of parameters in the function object creation part. Here, i didn't mention type for x in the object creation part"))
 
-  val moreSyntacticalSugar: (String,String)=> String = _ + _
+  val moreSyntacticalSugar: (String,String) => String = _ + _
   println(moreSyntacticalSugar("we can add more syntactical sugar to it ","by using _ symbol instead of eg., x=>x+1, just write x=>_+1, note here we didnt metnon teh type fo parameters, for _, sicne we already metnonde inte h ref varibael type, else compielr errror hap[pesn, as compierl wornt know teh type of the parameters else. Here, inthsi eg., we are adding 2 strings, sintead of (x:String, y:String)=>x+y, we write _ + _, note:type metninonign in the erf variable is mandatory in this case."))
 
 
   val addFunction: (Int) => Int = _ + 1
 
-  def HOFadd(f: (Int)=>(Int),n:Int, x:Int): Int = {
+  def HOFadd(f: (Int)=>(Int), n:Int, x:Int): Int = {
     if (n <= 0) x
     else HOFadd(f,n-1,f(x))
   }
@@ -59,7 +59,7 @@ object 9functions extends App{
   }
 
   val calculated = HOFadd(addFunction,5)
-  println("here, (x:Int)=>x is a identity function, i.e any x u give as input,the same x u get as output, when its returned from n = 0, in n = 1,it gets like   ((x:Int)=>x)(f(x)), i,e we apply the  (x:Int)=>x method,with the parameter x as f(x), then  (f(x):Int)=>f(x) results in f(x) only, so from n = 1, f(x) is returned, then at n = 2, f(x)(f(x)), so it becomes f(f(x)) and its returned, and finally at alst, we get the chain of functions ,f(f(f(f(f(x))))) i.e calculated = (x: Int) => f(f(f(f(f(x)))))")
+  println("here, (x:Int)=> x is a identity function, i.e any x u give as input,the same x u get as output, when its returned from n = 0, in n = 1,it gets like   ((x:Int)=>x)(f(x)), i,e we apply the  (x:Int)=>x method,with the parameter x as f(x), then  (f(x):Int)=>f(x) results in f(x) only, so from n = 1, f(x) is returned, then at n = 2, f(x)(f(x)), so it becomes f(f(x)) and its returned, and finally at alst, we get the chain of functions ,f(f(f(f(f(x))))) i.e calculated = (x: Int) => f(f(f(f(f(x)))))")
   println(calculated(1))
   println("now,apply x i.e 1 to (x: Int) => f(f(f(f(f(x))))), where f(x) = (Int) => Int = _ + 1,so it gets incremeted 5 times as a chain")
 
@@ -149,7 +149,7 @@ object 9functions extends App{
   val thirdList = EmptyMyFunctionalList.addNode(3).addNode(6).addNode(9)
   println("Dividing "+thirdList+" by "+ secondList+"using custom zip function = "+ secondList.zipWith(thirdList,(x,y)=>y/x))
 
-  println("Here, in ZipWith function,we use expliceit 2 type paramwters U,V where U is the type of teh parametr seocnd list, and V is for teh resulting zipepd result type, V would be the common or least upper bound type fo result of each element")
+  println("Here, in ZipWith function,we use expliceit 2 type parameters U,V where U is the type of teh parametr seocnd list, and V is for teh resulting zipepd result type, V would be the common or least upper bound type fo result of each element")
   println("Fold function using "+thirdList + "to multiply all "+thirdList.fold(1,(x,y)=>(x*y)))
 }
 

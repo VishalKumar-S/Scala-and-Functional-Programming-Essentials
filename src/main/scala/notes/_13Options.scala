@@ -3,7 +3,7 @@ package notes
 import scala.annotation.tailrec
 import scala.util.Random
 
-object 13Options extends App {
+object _13Options extends App {
   println("Option is used to replace the null pointer returning/ null [pointer represetnation issue, instead return a value representing there is no valeu exists. Option has a case object None and case class Some. So, its very usedul in API's , whereas whenever an issue happens, do not return the result direclty, that might be a null value,it wodul lead to issue, instead return it a Option[Value] , so that errors  r handled gracefully.")
 
   val value = Some(4)

@@ -1,10 +1,10 @@
 package notes
 
-import notes.functions.*
+import notes._9functions.*
 
 import scala.util.Random
 
-object 10defaultFunctions extends App{
+object _10defaultFunctions extends App{
 
   val num = List(1,2,3)
   val smallChar = List('a','b','c')

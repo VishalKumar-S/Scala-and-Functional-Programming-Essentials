@@ -1,23 +1,23 @@
 package notes
 
-object 5caseClasses extends App {
+object _5caseClasses extends App {
   val p1 = new caseClasses("1. In Case classes, all class parameters are class fiedls by default, no need of initialsiingin it val, it's automatically considered as class fields")
   println(p1.description)
 
-  val p2 = new caseClasses("2. By default, classes inherit thr AnyRef's toString, hashCode, == method, by default, == check checks whether 2 objects points ot the smae mmeory lcoation or not in normal classes, but in case classes, ==  checks not for referne equality,it checsk for contenet equalirt, contenti.e all fields same or not only.")
+  val p2 = new caseClasses("2. By default, classes inherit thr AnyRef's toString, hashCode, == method, by default, == check checks whether 2 objects points ot the smae mmeory lcoation or not in normal classes, but in case classes, ==  checks not for reference equality,it checsk for contenet equalirt, contenti.e all fields same or not only.")
 
 
   val p3 = new caseClasses("2. By default, classes inherit thr AnyRef's toString, hashCode, == method, by default, == check checks whether 2 objects points ot the smae mmeory lcoation or not in normal classes, but in case classes, ==  checks not for referne equality,it checsk for contenet equalirt, contenti.e all fields same or not only.")
 
   if (p2 == p3) println(s"{$p2}\n ALl fields of p2 and p3 objects r same, so both r same, according to case classes")
 
-  val p4 = new caseClasses("3. In case classes, teh toString gives a neat represenation fot eh pobject, by givin its fields as output, ususlyl in tradiiaotnl classes, toString gives not class fieslas output, just check it out, also in Scala, case classes offer syntactcial sugar, by not evne to mention toString alone with obejct, jsut emntion the object naem alone,thea slo itpritns the fiedls in nice manner")
+  val p4 = new caseClasses("3. In case classes, teh toString gives a neat represenation fot eh object, by givin its fields as output, ususlyl in tradiiaotnl classes, toString gives not class fieslas output, just check it out, also in Scala, case classes offer syntactcial sugar, by not evne to mention toString alone with obejct, jsut emntion the object naem alone,thea slo itpritns the fiedls in nice manner")
 
   println(p4)
   println("Normal Class: \n" + dummy("Ssgs") + "\n" + dummy("sgsgsgs").toString())
   println("Case Class: \n" + caseClasses("Ssgs") + "\n" + caseClasses("sgsgsgs").toString())
 
-  val companionObject = caseClasses("4. Companion objects means they r the objects present in teh same, fiel whihc has teh same name and fields of the class in the file. Case classes, automatically creates comapnion objects, when they create case classes,i.e they create com[anion object of naem classClasses with description field, and caseclass's companion object contains apply method, that creates a new instance of the classClasses class, we already know taht apply emthod is used to call the object/class like an method, here the thign im writing is calling the apply method of the compainonobject of caseClassess, and it returns a new isntance of the CaseCLasses case, as this string as description.You can see i dindt use any enw keyword here")
+  val companionObject = caseClasses("4. Companion objects means they r the objects present in teh same, fiel whihc has teh same name and fields of the class in the file. Case classes, automatically creates comapnion objects, when they create case classes,i.e they create com[anion object of naem classClasses with description field, and caseclass's companion object contains apply method, that creates a new instance of the classClasses class, we already know that apply method is used to call the object/class like an method, here the thing im writing is calling the apply method of the companion object of caseClasses, and it returns a new instance of the CaseClasses case, as this string as description. You can see i didn't use any new keyword here")
 
   println(companionObject.description)
   println(companionObject.getClass.getName)
@@ -40,7 +40,7 @@ case class caseClasses(description: String = "", number: Int = 123456789) {
 }
 
 case object caseObject {
-  val describe = "5. Case classes support serialisataion so, foe eg., we can transfer an object created here,to another system, and exefute over tehre ,its widely used in Akka framework \n 6. Case classes have extractor patterns, so case classes can be used in pattern matching \n 7. THer eia thign called Case objects, which acts similar to the case class, where  teh difference is in a case object, its companion object is the same object itself.\n 8. Case classes have handy copy methods. For example,u cna copy an isntance of a classt oa ntoerh sintance of a calss,jsut modifying a sepcific feidls aloen,if needed"
+  val describe = "5. Case classes support serialisataion so, for eg., we can transfer an object created here, to another system, and exefute over tehre ,its widely used in Akka framework \n 6. Case classes have extractor patterns, so case classes can be used in pattern matching \n 7. There is a thing called Case objects, which acts similar to the case class, where  teh difference is in a case object, it's companion object is the same object itself.\n 8. Case classes have handy copy methods. For example,u can copy an instance of a class t oa ntoerh sintance of a calss,jsut modifying a sepcific feidls aloen,if needed"
 }
 
 

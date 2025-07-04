@@ -1,6 +1,6 @@
 package notes
 
-object 6enums {
+object _6enums {
 
   enum fileActions(keyboardShortcut: String) {
     case READ extends fileActions("CTRL+R")
@@ -28,7 +28,7 @@ object 6enums {
   }
 
   def main(args:Array[String]):Unit =  {
-      println("Enums, are  sepcial datatypes, which contains constants, which acts as finite instances ot teh enums, u can instatntiate or create a enw isntance to a enum, u can only used teh already fixed cosntatns in teh enusm, that are the only way u can use isntance of enums. ENusm helps in having only finite set of posisbilties, so its useful in areas, where having only finfite set fo optiosn is safe, it also used to represent protocol states, configuration options, or command sets, ensuring only valid values are used.")
+      println("Enums, are  sepcial datatypes, which contains constants, which acts as finite instances ot teh enums, u can instatntiate or create a enw isntance to a enum, u can only used teh already fixed cosntatns in teh enusm, that are the only way u can use isntance of enums. Enums helps in having only finite set of posisbilties, so its useful in areas, where having only finfite set fo optiosn is safe, it also used to represent protocol states, configuration options, or command sets, ensuring only valid values are used.")
 
       val readFile1: fileActions = accessFileActionInstances("CTRL+R")
       readFile1.openFile()

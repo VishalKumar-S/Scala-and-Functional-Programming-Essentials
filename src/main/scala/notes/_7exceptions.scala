@@ -5,12 +5,12 @@ class CustomExceptionError extends Exception{
 }
 
 
-object 7exceptions extends App{
+object _7exceptions extends App{
     println("Exceptions a re JVM concept, scala compielr hass notign to do with it.")
 
 
 
-    def crashProgram(decision: Boolean)={
+    def crashProgram(decision: Boolean) = {
       if(decision) throw new CustomExceptionError
       18
     }
@@ -18,6 +18,7 @@ object 7exceptions extends App{
     val tryCatchBlocks = try{
       crashProgram(true)
     }
+
     catch{
       case e: CustomExceptionError => 18
     }
@@ -31,7 +32,7 @@ object 7exceptions extends App{
     crashProgram(false)
   }
   catch {
-    case e: CustomExceptionError => println("The Scala compiler uses type inference to find a common supertype for all possible return values from the try block and all catch cases. Here, try returns integer, catch retursn unit, then supertype for both, AnyRef is the type of tryCatchBlocks1 duroing compile time, then durinf runtime, wither one of the blokcs -either try/cathc is gogint o get exeuted,right,tis type would ebe the type of tryCatchBlocks1")
+    case e: CustomExceptionError => println("The Scala compiler uses type inference to find a common supertype for all possible return values from the try block and all catch cases. Here, try returns integer, catch returns unit, then supertype for both, AnyRef is the type of tryCatchBlocks1 during compile time, then during runtime, either one of the blocks -either try/cathc is gogint o get exeuted,right,tis type would ebe the type of tryCatchBlocks1")
   }
 
   try {
