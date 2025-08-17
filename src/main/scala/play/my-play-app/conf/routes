@@ -1,0 +1,26 @@
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+GET  /hello                 controllers.HomeController.hello()
+
+POST    /users              controllers.HomeController.createUser
+
+GET     /users                  controllers.HomeController.getAllUsers
+
+GET    /greet/:name             controllers.HomeController.greetName(name: String)
+
+GET    /greetInJson/:name             controllers.HomeController.greetNameinJson(name: String)
+
+GET    /getData         controllers.HomeController.getDataAsync
+
+
+GET     /users/:id          controllers.HomeController.getUserById(id: Long)
+
+
+GET    /users           controllers.HomeController.getUserById(id: Long)
+
+
+GET  /listAllUsers    controllers.HomeController.listUsers()
+
+PUT     /users/:id              controllers.HomeController.updateUser(id: Long)
+
+DELETE  /users/:id               controllers.HomeController.deleteUser(id: Long)

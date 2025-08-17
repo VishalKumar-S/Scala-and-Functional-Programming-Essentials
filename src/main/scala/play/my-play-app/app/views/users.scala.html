@@ -1,0 +1,29 @@
+
+
+
+@(title: String, users: List[userList])(implicit request: RequestHeader)
+
+
+
+
+@main(title){
+<h1> @title</h1>
+
+@if(users.isEmpty){
+<p> No people found</p>
+}
+
+
+
+
+@else{
+    <ul>
+        @for(user <- users){
+            <div>
+            <p>User id: @user.id <br> Name: @user.name <br> Age: @user.age <br> Address: @user.address</p>
+            </div>
+        }
+
+    </ul>
+}
+}

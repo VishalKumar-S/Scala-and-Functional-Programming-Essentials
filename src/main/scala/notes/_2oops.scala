@@ -102,9 +102,9 @@ class Persons() {
   val father = new Person("Kumar")
 
   val child = Person(mother, father)
-
-
-
+  
+  
+  
 }
 
 
@@ -130,7 +130,7 @@ class SyntacticalSugar(val name: String = "Vishal Kumar. S") {
 
   def unary_+ = "+" + name
 
-  def postfixMethod = "Prefix and infix are unambiguous and widely accepted, as prefix notation has only  4 symbols, hardcoded into the compiler as method names like unary_+, unary_-, etc. Postfix adds risk, especially when methods and fields overlap. Using postfix notation is deprecated, since it leads to ambiguities,its behavior can be inconsistent depending on the context, and it can lead to code that's harder to read and maintain. The syntax like name postfixMethod() is not allowed since when you write name postfixMethod(), it becomes ambiguous whether you're trying to call postfixMethod with no arguments on name, and then call the result as a function Or you're trying to call postfixMethod() on name using postfix notation. So, use like println(name postfixMethod). If u r psotifx method does not return anything i.e Unit returning method, then if u access like name postfixMethod , will lead to compiler issue. It work if used like (name postfixMethod), that too only if u import import scala.language.postfixOps, since In Scala, postfix notation (i.e., calling a method without . and ()) like p print or even (p print) is disabled by default, regardless of parentheses, to avoid ambiguity and encourage clear syntax.\n"
+  def postfixMethod = "Prefix and infix are unambiguous and widely accepted, as prefix notation has only  4 symbols, hardcoded into the compiler as method names like unary_+, unary_-, etc. In Scala, a postfix expression is when a method is called on an object without any arguments and without using a dot (.) before the method name.The method being called takes no parameters.Instead of object.method, you just write object method. Postfix adds risk, especially when methods and fields overlap. Using postfix notation is deprecated, since it leads to ambiguities,its behavior can be inconsistent depending on the context, and it can lead to code that's harder to read and maintain. The syntax like name postfixMethod() is not allowed since when you write name postfixMethod(), it becomes ambiguous whether you're trying to call postfixMethod with no arguments on name, and then call the result as a function Or you're trying to call postfixMethod() on name using postfix notation. So, use like println(name postfixMethod). If u r psotifx method does not return anything i.e Unit returning method, then if u access like name postfixMethod , will lead to compiler issue. It work if used like (name postfixMethod), that too only if u import import scala.language.postfixOps, since In Scala, postfix notation (i.e., calling a method without . and ()) like p print or even (p print) is disabled by default, regardless of parentheses, to avoid ambiguity and encourage clear syntax.\n"
 
   def apply() = "There is a special method named apply(), if we use that method, we even don't want to call the method name, we can directly call the object like a method, the apply method lets you call the object itself as a function."
 
