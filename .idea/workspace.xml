@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="32abb2fd-52e6-43fb-a238-81c1b75c6863" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Scala-and-Functional-Programming-Essentials.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-play-grpc/project/plugins.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-play-grpc/src/main/protobuf/greeter.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/learnPackages/learnPackages.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_10defaultFunctions.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_11scalaImmutableCollections.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_12tuplesAndMaps.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_13Options.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_14tryExceptions.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_15patternMatching.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_1Introduction.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_2oops.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_3inheritance.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_4generics.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_5caseClasses.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_6enums.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_7exceptions.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_8packages.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/_9functions.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/notes/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/.g8/form/app/controllers/$model__Camel$Controller.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/.g8/form/app/views/$model__camel$/form.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/.g8/form/conf/routes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/.g8/form/default.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/.g8/form/test/controllers/$model__Camel$ControllerSpec.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/app/controllers/HomeController.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/app/views/index.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/app/views/main.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/build.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/conf/application.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/conf/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/conf/messages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/conf/routes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/project/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/project/plugins.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/public/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/public/javascripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/public/stylesheets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/learn-grpc/test/controllers/HomeControllerSpec.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/.g8/form/app/controllers/$model__Camel$Controller.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/.g8/form/app/views/$model__camel$/form.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/.g8/form/conf/routes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/.g8/form/default.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/.g8/form/test/controllers/$model__Camel$ControllerSpec.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/app/controllers/HomeController.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/app/views/main.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/app/views/users.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/build.sc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/conf/application.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/conf/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/conf/messages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/conf/routes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/project/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/project/plugins.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/public/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/public/javascripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/public/stylesheets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/play/my-play-app/test/controllers/HomeControllerSpec.scala" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Scala-and-Functional-Programming-Essentials" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;VishalKumar-S&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VishalKumar-S/Scala-and-Functional-Programming-Essentials.git&quot;,
+    &quot;accountId&quot;: &quot;8bc6fdf1-b568-4156-845f-3c3a206ebaed&quot;
+  }
+}</component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="30GLEtLnvZfLwee1Y0h4BrW8gWa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application._1Introduction.executor": "Run",
+    "Application._2oops.executor": "Run",
+    "Application._3inheritance.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Vkumars/Downloads/Vishal/College/Scala-and-Functional-Programming-Essentials",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "sbt.project.settings.configurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\learn-play-grpc\project" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="scala-and-functional-programming-essentials" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="scala-and-functional-programming-essentials" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="migrateConfigurationsNotificationShown" value="true" />
+    <option name="scala3DisclaimerShown" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32abb2fd-52e6-43fb-a238-81c1b75c6863" name="Changes" comment="" />
+      <created>1753248854336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753248854336</updated>
+    </task>
+    <servers />
+  </component>
+</project>

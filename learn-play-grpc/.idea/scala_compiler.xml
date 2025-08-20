@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="learn-play-gRPC,learn-play-gRPC.main,learn-play-gRPC.test,learn-play-grpc,learn-play-grpc.main,learn-play-grpc.test,learn-play-grpc_1609,learn-play-grpc_1609.main,learn-play-grpc_1609.test" />
+  </component>
+</project>

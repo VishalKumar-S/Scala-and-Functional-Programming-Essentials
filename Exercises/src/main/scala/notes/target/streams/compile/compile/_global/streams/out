@@ -1,0 +1,40 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_10defaultFunctions.scala:146:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef repeatedFill(x: Int): String=> List[String] = (s: String)=> {[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_12tuplesAndMaps.scala:7:20: too many elements for tuple: 30, allowed: 22[0m
+[0m[[0m[31merror[0m] [0m[0m  val largeTuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10,[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_15patternMatching.scala:115:18: ';' expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  class braceless:[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_15patternMatching.scala:120:9: '(' expected but identifier found.[0m
+[0m[[0m[31merror[0m] [0m[0m        x <- li[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_15patternMatching.scala:136:9: '{' expected but 'case' found.[0m
+[0m[[0m[31merror[0m] [0m[0m        case List(1,_*)=> println("Im braceless apttern amtching")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_15patternMatching.scala:137:9: illegal start of definition[0m
+[0m[[0m[31merror[0m] [0m[0m        case _ => println("im default")[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_4generics.scala:198:15: illegal start of simple expression[0m
+[0m[[0m[31merror[0m] [0m[0m        catch case e:NotImplementedError => println("??? Is called as 'Not Yet Implemented' in Scala. u can use it as a placeholder to indicate unimplmented code and, when executed, throws a NotImplementedError.This makes it useful during development when you want to outline the structure of your code but haven't yet provided an implementation for certain methods or expressions.\n")[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_4generics.scala:314:12: '(' expected but identifier found.[0m
+[0m[[0m[31merror[0m] [0m[0m        if evenFilter.test(head) then new ExistingMyList(head, tail.filter(evenFilter))[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_4generics.scala:316:5: illegal start of simple expression[0m
+[0m[[0m[31merror[0m] [0m[0m    }[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_4generics.scala:348:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval anonymousClass: demo = new demo{[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_6enums.scala:6:15: '=>' expected but 'extends' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    case READ extends fileActions("CTRL+R")[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_9functions.scala:253:8: '(' expected but identifier found.[0m
+[0m[[0m[31merror[0m] [0m[0m    if evenFilter(head) then new ExistingMyFunctionalList(head, tail.filter(evenFilter))[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Vkumars\Downloads\Vishal\College\Scala-and-Functional-Programming-Essentials\Exercises\src\main\scala\notes\_9functions.scala:256:3: illegal start of simple expression[0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m13 errors found[0m

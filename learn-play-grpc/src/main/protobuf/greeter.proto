@@ -1,0 +1,35 @@
+//A proto file is basically:
+//
+//    A syntax version (proto2 vs proto3 → we’ll use proto3).
+//
+//    The messages (like your request/response shapes).
+//
+//    The service definition (like a contract listing the RPC methods).
+//
+//
+//    So we need two messages:
+//
+//    HelloRequest → contains a name
+//
+//    HelloReply → contains a greeting message
+//
+//    Then a service:
+//
+//    Greeter with a single method SayHello
+
+syntax = "proto3";
+
+package greeter;
+
+
+message HelloRequest{
+  string name = 1;
+}
+
+message HelloReply{
+  string message = 1;
+}
+
+service Greeter{
+  rpc sayHello(HelloRequest) returns (HelloReply);
+    }
